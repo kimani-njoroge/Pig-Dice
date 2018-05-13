@@ -34,7 +34,7 @@ function rollDie() {
   var result = die.roll();
   return result;
 }
-function dieRoll(){
+function dieRoll2(){
   var result2 = die.roll2();
   return result2;
 }
