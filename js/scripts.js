@@ -8,7 +8,11 @@ var die = {
     countTotal+=diceNumber;
     if (diceNumber ===1){
       countTotal = 0;
+      $('.dice').prop('disabled', true);
+      $('.die').prop('enable', true);
+
     } else if (diceNumber > 1) {
+      $('.dice').prop('disabled', false);
       return diceNumber;
     }
   }
@@ -34,8 +38,14 @@ $(document).ready(function(){
     var result = die.roll();
     $("#cur1").text(result);
     $("#tot1").text(countTotal.toString());
-
-
   });
+  $(".die").click(function(event){
+    event.preventDefault();
+
+    var result = die.roll();
+    $("#cur2").text(result);
+    $("#tot2").text(countTotal.toString());
+  });
+
 
 });
