@@ -1,1 +1,20 @@
-
+.jumbotron{
+  background-color: #B4CFA5  ;
+  color : white;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0px;
+}
+.instructions{
+  background-color: #AFBBE8  ;
+  padding-bottom: 0px;
+}
+.register{
+  background:linear-gradient(to bottom, #95B19E,red);
+  padding-top: 30px;
+}
+.card-body{
+  background-color: black;
+  color: white;
+}
