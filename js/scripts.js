@@ -9,7 +9,7 @@ var die = {
     if (diceNumber ===1){
       countTotal = 0;
       $('.dice').prop('disabled', true);
-      $('.die').prop('enable', true);
+      $('.die').prop('disabled', false);
 
     } else if (diceNumber > 1) {
       $('.dice').prop('disabled', false);
@@ -22,7 +22,7 @@ var die = {
     if(diceNumber === 1){
       countTotal = 0;
       $('.die').prop('disabled', true);
-      $('.dice').prop('enable', true);
+    $('.dice').prop('disabled', false);
     } else if (diceNumber > 1) {
       $('.die').prop('disabled', false);
       return diceNumber;
